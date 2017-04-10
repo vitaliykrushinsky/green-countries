@@ -12,10 +12,12 @@ import { CommonModule } from '@angular/common';
 import { FrameworkBodyComponent } from './framework-body/framework-body.component';
 import { ContentComponent } from './content/content.component';
 import { FrameworkConfigService } from './services/framework-config.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     FrameworkBodyComponent,
