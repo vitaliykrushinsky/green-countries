@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FwModule } from '../fw/fw.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -6,19 +7,24 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CountriesComponent } from './countries/countries.component';
 import { SettingsComponent } from './settings/settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CountryDetailComponent } from './country-detail/country-detail.component';
+import { CountryListComponent } from './country-list/country-list.component';
+import { CountryMaintComponent } from './country-maint/country-maint.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CountriesComponent,
     SettingsComponent,
-    DashboardComponent
+    DashboardComponent,
+    CountryDetailComponent,
+    CountryListComponent,
+    CountryMaintComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,

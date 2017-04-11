@@ -1,3 +1,4 @@
+import { PopupMenuComponent } from './menus/popup-menu/popup-menu.component';
 import { MenuItemComponent } from './menus/menu-item/menu-item.component';
 import { MenuComponent } from './menus/menu/menu.component';
 import { MenuService } from './services/menu.service';
@@ -28,7 +29,8 @@ import { RouterModule } from '@angular/router';
     ScreenLarge,
     ScreenBelowLarge,
     MenuComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    PopupMenuComponent
   ],
   providers: [
     FrameworkConfigService,
