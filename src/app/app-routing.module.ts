@@ -20,7 +20,7 @@ const routes: Routes = [
           { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
           { path: 'dashboard', component: DashboardComponent },
           { path: 'country-list/:count', component: CountryListComponent },
-          { path: 'country-detail/:country', component: CountryDetailComponent },
+          { path: 'country-detail/:id/:operation', component: CountryDetailComponent },
           { path: 'country-maint', component: CountryMaintComponent },
           { path: 'settings', component: SettingsComponent },
         ] }

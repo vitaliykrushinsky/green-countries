@@ -13,7 +13,7 @@ export class UserService implements UserApi {
   signIn(username: string, password: string, rememberMe: boolean): Observable<any> {
     console.log('UserService.signIn: ' + username + ' ' + password + ' ' + rememberMe);
     this.isAuthenticated = true;
-    return Observable.of({}).delay(2000);
+    return Observable.of({}).delay(500);
     // return Observable.of({}).delay(2000).flatMap(x=>Observable.throw('Invalid User Name and/or Password'));
   }
 
